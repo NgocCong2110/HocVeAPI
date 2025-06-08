@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="TrangDangNhap.css">
+    <script src="../Controller/DangNhap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="checkdangnhap(event)">
+          <label for="username">Tên Đăng Nhập</label>
+          <input type="text" id="username" required />
+          <label for="password">Mật Khẩu</label>
+          <input type="password" id="password" required />
+          <p id = "thongbaoloi" style="color: red;"></p>
+          <button type="submit" id = "dangnhap">Xác Nhận</button>
+        </form>
+      </div>   
+</body>
+</html>

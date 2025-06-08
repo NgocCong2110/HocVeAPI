@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background-color: rgb(245, 243, 240);
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* căn giữa theo chiều ngang */
+    align-items: center;     /* căn giữa theo chiều dọc */
+}
+
+form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+form label {
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    align-self: center;
+    padding: 8px 16px;
+    width: 50%;
+    background-color: rgb(171, 210, 113);
+    color: white;
+    border: none;
+    cursor: pointer;
+}

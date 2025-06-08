@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(245, 243, 240);
+}
+#formdangky{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    display: flex;
+    width: 40%;
+    height: 45%;
+    padding: 10px;
+    flex-direction: column;
+    background-color: white;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgb(27, 27, 26);
+}
+label{
+    font-size: 20px;
+}
+#thongbao{
+    height: 20%;
+    margin: 0;
+    font-size: 13px;
+}
+#xacnhan{
+    align-self: center;
+    background-color: rgb(171, 210, 113);
+    color: white;
+    width: 30%;
+    height: 50%;
+}
