@@ -8,8 +8,8 @@ body {
 .container {
     height: 100vh;
     display: flex;
-    justify-content: center; /* căn giữa theo chiều ngang */
-    align-items: center;     /* căn giữa theo chiều dọc */
+    justify-content: center; 
+    align-items: center;    
 }
 
 form {
@@ -42,4 +42,7 @@ form button {
     color: white;
     border: none;
     cursor: pointer;
+}
+#chuyenform{
+    align-self: flex-end;
 }

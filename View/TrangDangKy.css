@@ -33,3 +33,6 @@ label{
     width: 30%;
     height: 50%;
 }
+#chuyenform{
+    align-self: flex-end;
+}

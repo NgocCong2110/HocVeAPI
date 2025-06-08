@@ -4,6 +4,15 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
+
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open TrangDangKy.html",
+            "file": "c:\\Users\\Lenovo\\OneDrive\\Desktop\\hoc\\View\\TrangDangKy.html"
+        },
+
         {
             "name": ".NET Core Attach",
             "type": "coreclr",
