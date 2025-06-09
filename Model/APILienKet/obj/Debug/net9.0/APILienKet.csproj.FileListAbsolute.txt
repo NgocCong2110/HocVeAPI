@@ -42,6 +42,7 @@ C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\obj\Debug\net9.0\APILienKe
 C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\obj\Debug\net9.0\APILienKet.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\obj\Debug\net9.0\APILienKet.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\obj\Debug\net9.0\APILienKet.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\obj\Debug\net9.0\APILienKet.sourcelink.json
 C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\obj\Debug\net9.0\scopedcss\bundle\APILienKet.styles.css
 C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\obj\Debug\net9.0\staticwebassets.build.json.cache

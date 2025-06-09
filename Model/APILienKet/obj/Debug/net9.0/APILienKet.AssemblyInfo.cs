@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APILienKet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c6d6938fb0766918273b6381fcec51460414be5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59a7536b97f7a85940f153e99b726bc1f4c8d9ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("APILienKet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APILienKet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
