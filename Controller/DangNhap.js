@@ -20,8 +20,11 @@ async function checkdangnhap(event) {
         })
 
         if (response.ok) {
-            document.getElementById("thongbaoloi").innerHTML = "nguoi dung ton tai"
-            alert("Dang nhap thanh cong")
+            const result = await response.json()
+            //LayEmail doi thanh layEmail :D
+            userdata.EmailNguoiDung = result.layEmail
+            localStorage.setItem("ThongTinNguoiDung", JSON.stringify(userdata))
+            alert("Đăng Nhập Thành Công")
             window.location.href = "../View/TrangChu.html"
         }
         else {

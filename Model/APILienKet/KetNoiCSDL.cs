@@ -60,5 +60,30 @@ namespace APILienKet
             }
             return null;
         }
+        public static string? LayEmailNguoiDung(string TenNguoiDung)
+        {
+            using var coon = new MySqlConnection(urlketnoi);
+            coon.Open();
+            string TimKiemEmail = "Select emailnguoidung from thongtinnguoidung where tennguoidung = @tennguoidung";
+            using var cmd = new MySqlCommand(TimKiemEmail, coon);
+            cmd.Parameters.AddWithValue("@tennguoidung", TenNguoiDung);
+            using var reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                return reader["EmailNguoiDung"].ToString();
+            }
+            return null;
+        }
+        public static void ThemNguoiDung(ThongTin thongTin)
+        {
+            using var coon = new MySqlConnection(urlketnoi);
+            coon.Open();
+            string ThemThongTin = "Insert into thongtinnguoidung(tennguoidung, emailnguoidung, matkhaunguoidung) values(@tennguoidung, @emailnguoidung, @matkhaunguoidung)";
+            using var reader = new MySqlCommand(ThemThongTin, coon);
+            reader.Parameters.AddWithValue("@tennguoidung", thongTin.TenNguoiDung);
+            reader.Parameters.AddWithValue("@emailnguoidung", thongTin.EmailNguoiDung);
+            reader.Parameters.AddWithValue("@matkhaunguoidung", thongTin.MatKhauNguoiDung);
+            reader.ExecuteNonQuery();
+        }
     }
 }

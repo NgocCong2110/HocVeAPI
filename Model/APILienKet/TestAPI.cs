@@ -23,10 +23,21 @@ namespace APILienKet
                 string? kiemtrapassw = KetNoiCSDL.KiemTraMatKhau(thongtin.TenNguoiDung);
                 if (thongtin.MatKhauNguoiDung == kiemtrapassw)
                 {
-                    return Ok(new { message = "Đăng Nhập Thành Công" });
+                    string? LayEmail = KetNoiCSDL.LayEmailNguoiDung(thongtin.TenNguoiDung);
+                    return Ok(new { message = "Đăng Nhập Thành Công", LayEmail });
                 }
             }
             return Unauthorized(new { message = "Thông Tin Không Khớp" });
+        }
+        [HttpPost("ChenThongTinNguoiDung")]
+        public IActionResult InsertUser([FromBody] ThongTin thongtin)
+        {
+            if (thongtin != null)
+            {
+                KetNoiCSDL.ThemNguoiDung(thongtin);
+                return Ok(new {message = "Đã thêm người dùng"});
+            }
+            return BadRequest(new { message = "Có sự cố khi thêm"});
         }
     }
 }
