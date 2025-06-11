@@ -18,7 +18,13 @@ async function dangky(event){
             },
             body : JSON.stringify(userdata)
         })
-        window.location.href = "../View/TrangChu.html"
+        if(response.ok){
+            window.location.href = "../View/TrangChu.html"
+        }
+        else{
+            const error = await response.JSON();
+            document.getElementById("thongbao").innerHTML = error.message
+        }
     }
     else{
         document.getElementById("thongbao").innerHTML = "Mật khẩu không khớp"
