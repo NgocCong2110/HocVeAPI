@@ -10,7 +10,6 @@
             "name": "Open TaiKhoan.html",
             "file": "c:\\Users\\Lenovo\\OneDrive\\Desktop\\hoc\\View\\TaiKhoan.html"
         },
-        
         {
             "type": "chrome",
             "request": "launch",
@@ -23,7 +22,6 @@
             "name": "Open TrangDangKy.html",
             "file": "c:\\Users\\Lenovo\\OneDrive\\Desktop\\hoc\\View\\TrangDangKy.html"
         },
-
         {
             "name": ".NET Core Attach",
             "type": "coreclr",

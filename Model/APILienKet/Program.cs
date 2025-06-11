@@ -19,6 +19,15 @@ namespace APILienKet
             });
 
             services.AddControllers();
+            // services.AddAuthentication("Cookie").AddCookie("Cookie", options =>
+            // {
+            //     options.Cookie.Name = "ThongTinDangNhap";
+            //     // options.Cookie.HttpOnly = true;
+            //     // options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+            //     // options.Cookie.SameSite = SameSiteMode.Strict;
+            //     options.LoginPath = "/View/TrangDangNhap.html";
+            //     options.ExpireTimeSpan = TimeSpan.FromDays(7);
+            // });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -31,6 +40,9 @@ namespace APILienKet
             app.UseRouting();
 
             app.UseCors("AllowLocalhost");
+
+            // app.UseAuthentication();
+            // app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

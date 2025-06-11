@@ -1,5 +1,7 @@
-function DangXuat(event){
+function DangXuat(event) {
     event.preventDefault()
-    localStorage.removeItem("ThongTinNguoiDung")
-    window.location.href = "../View/TrangDangNhap.html"
+    setTimeout(() => {
+        document.cookie = "ThongTinNguoiDung=0; path=/; max-age=0"
+        window.location.href = "../View/TrangDangNhap.html"
+    }, 500)
 }
