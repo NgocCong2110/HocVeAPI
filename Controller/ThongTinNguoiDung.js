@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function LayThongTin() {
+document.addEventListener("DOMContentLoaded", () => {
     const data = getCookie("ThongTinNguoiDung")
     if (data) {
         try {

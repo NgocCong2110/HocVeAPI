@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(245, 243, 240);
+    background-color: white
+    font-family: sans-serif;
 }
 #formdangky{
     display: flex;
@@ -7,19 +8,28 @@ body{
     align-items: center;
     height: 100vh;
 }
+form label{
+    font-weight: bold;
+}
 form{
     display: flex;
-    width: 40%;
-    height: 45%;
+    width: 400px;
+    height: 55%;
     padding: 10px;
     flex-direction: column;
     background-color: white;
+    border: 1px solid #ddd;
     gap: 10px;
     border-radius: 5px;
-    box-shadow: 0 4px 10px rgb(27, 27, 26);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+form input{
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
 }
 label{
-    font-size: 20px;
+    font-size: 17px;
 }
 #thongbao{
     height: 20%;
@@ -30,8 +40,8 @@ label{
     align-self: center;
     background-color: rgb(171, 210, 113);
     color: white;
-    width: 30%;
-    height: 50%;
+    width: 90%;
+    height: 25%;
 }
 #chuyenform{
     align-self: flex-end;
