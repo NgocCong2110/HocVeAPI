@@ -5,65 +5,18 @@ using Microsoft.Extensions.Hosting;
 
 namespace APILienKet
 {
-    public class Startup
+    public class Program
     {
-        public void ConfigureServices(IServiceCollection services)
+        public static void Main(string[] args)
         {
-            services.AddCors(options =>
-            {
-                options.AddPolicy("AllowLocalhost",
-                    builder => builder
-                        .AllowAnyOrigin()
-                        .AllowAnyHeader()
-                        .AllowAnyMethod());
-            });
-
-            services.AddControllers();
-            // services.AddAuthentication("Cookie").AddCookie("Cookie", options =>
-            // {
-            //     options.Cookie.Name = "ThongTinDangNhap";
-            //     // options.Cookie.HttpOnly = true;
-            //     // options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
-            //     // options.Cookie.SameSite = SameSiteMode.Strict;
-            //     options.LoginPath = "/View/TrangDangNhap.html";
-            //     options.ExpireTimeSpan = TimeSpan.FromDays(7);
-            // });
+            CreateHostBuilder(args).Build().Run();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
-            app.UseRouting();
-
-            app.UseCors("AllowLocalhost");
-
-            // app.UseAuthentication();
-            // app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
-        }
-
-
-        public class Program
-        {
-            public static void Main(string[] args)
-            {
-                CreateHostBuilder(args).Build().Run();
-            }
-
-            public static IHostBuilder CreateHostBuilder(string[] args) =>
-                Host.CreateDefaultBuilder(args)
-                    .ConfigureWebHostDefaults(webBuilder =>
-                    {
-                        webBuilder.UseStartup<Startup>();
-                    });
-        }
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }

@@ -9,7 +9,7 @@ namespace APILienKet
     [Route("api/[controller]")]
     public class TestAPI : ControllerBase
     {
-        [HttpPost("TimKiemNguoiDung")]
+        [HttpPost("KiemTraDangNhap")]
         public IActionResult Login([FromBody] ThongTin thongtin)
         {
             // if (thongtin.TenNguoiDung == "nguyen van a" && thongtin.MatKhauNguoiDung == "123456")
@@ -29,7 +29,7 @@ namespace APILienKet
             }
             return Unauthorized(new { message = "Thông Tin Không Khớp" });
         }
-        [HttpPost("ChenThongTinNguoiDung")]
+        [HttpPost("ThemNguoiDungMoi")]
         public IActionResult InsertUser([FromBody] ThongTin thongtin)
         {
             if (thongtin != null)

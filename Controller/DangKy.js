@@ -11,7 +11,7 @@ async function dangky(event){
         MatKhauNguoiDung : userpass
     }
     if(check == true){
-        const response = await fetch("http://localhost:5450/api/TestAPI/ChenThongTinNguoiDung",{
+        const response = await fetch("http://localhost:5450/api/TestAPI/ThemNguoiDungMoi",{
             method : "POST",
             headers : {
                 "Content-Type" : "application/json"

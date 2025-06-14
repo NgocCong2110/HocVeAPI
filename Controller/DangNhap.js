@@ -11,7 +11,7 @@ async function checkdangnhap(event) {
     }
 
     try {
-        const response = await fetch("http://localhost:5450/api/TestAPI/TimKiemNguoiDung", {
+        const response = await fetch("http://localhost:5450/api/TestAPI/KiemTraDangNhap", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

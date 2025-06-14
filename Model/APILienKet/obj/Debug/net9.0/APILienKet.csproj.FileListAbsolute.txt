@@ -24,6 +24,9 @@ C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\bin\Debug\net9.0\Microsoft
 C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\bin\Debug\net9.0\MySql.Data.dll
 C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\bin\Debug\net9.0\Newtonsoft.Json.dll
 C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Lenovo\OneDrive\Desktop\hoc\Model\APILienKet\bin\Debug\net9.0\System.Security.Permissions.dll
