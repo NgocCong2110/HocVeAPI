@@ -1,3 +1,4 @@
+//dung cookie
 document.addEventListener("DOMContentLoaded", () => {
     const data = getCookie("ThongTinNguoiDung")
     if (data) {
@@ -26,3 +27,15 @@ function getCookie(name) {
     }
     return null
 }
+
+
+
+
+//Khong dung cookie
+// document.addEventListener("DOMContentLoaded", () => {
+//     const data = JSON.parse(localStorage.getItem("ThongTinNguoiDung"))
+//     const tennd = data.TenNguoiDung
+//     const emailnd = data.EmailNguoiDung
+//     document.getElementById("TenChenVao").innerText = tennd
+//     document.getElementById("EmailChenVao").innerText = emailnd
+// })

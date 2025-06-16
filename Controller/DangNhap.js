@@ -24,6 +24,7 @@ async function checkdangnhap(event) {
             //LayEmail doi thanh layEmail :D
             userdata.EmailNguoiDung = result.layEmail
             document.cookie = `ThongTinNguoiDung=${encodeURIComponent(JSON.stringify(userdata))}; path=/; max-age=86400`
+            // localStorage.setItem("ThongTinNguoiDung", JSON.stringify(userdata))
             alert("Đăng Nhập Thành Công")
             setTimeout(()=>{
                 window.location.href = "../View/TrangChu.html"
