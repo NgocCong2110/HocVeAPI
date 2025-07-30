@@ -9,10 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../Controller/DangXuat.js"></script>
     <link rel="stylesheet" href="TrangChu.css">
+    <script src="../Controller/TruyVanTraiCay.js"></script>
 </head>
 
 <body>
-    <div class="container" style="border: 2px solid black ; width: 100%;">
+    <div class="container" style="width: 100%;">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> <a href="/"
                 class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"> <svg
                     class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
@@ -38,9 +39,21 @@
             </div>
         </div>
     </div>
-    <div class = "HinhNenChinh">
-        <img src="AnhTrang/AnhChinh.jpg" id = "AnhChinh">
-        <p id = "VanBan">Tìm trái cây mà bạn cần</p>
+
+    <!-- Anh background -->
+    <div class="HinhNenChinh" style="margin-top: 1%;">
+        <img src="AnhTrang/AnhChinh.jpg" id="AnhChinh" class="w-100" style="height: 70vh;">
+        <p id="VanBan" class="w-100" style="height: 70vh;">Tìm trái cây mà bạn cần</p>
+    </div>
+
+    <!--  -->
+    <div class = "container mt-5">
+        <form class="d-flex justify-content-center align-items-center flex-column">
+            <label style="font-size: 250%; font-weight: bold; margin-bottom: 2%;">De xuat cac mon an tot cho ban</label>
+            <input type="text" style="width: 60vw; height: 10vh; border-radius: 5px;">
+            <button onclick="Test(event)">Click here</button>
+            <p id = "12ab"></p>
+        </form>
     </div>
 </body>
 
