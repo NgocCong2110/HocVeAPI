@@ -23,12 +23,12 @@ async function checkdangnhap(event) {
             const result = await response.json()
             //LayEmail doi thanh layEmail :D
             userdata.EmailNguoiDung = result.layEmail
-            document.cookie = `ThongTinNguoiDung=${encodeURIComponent(JSON.stringify(userdata))}; path=/; max-age=86400`
-            // localStorage.setItem("ThongTinNguoiDung", JSON.stringify(userdata))
+            // document.cookie = `ThongTinNguoiDung=${encodeURIComponent(JSON.stringify(userdata))}; path=/; max-age=86400`
+            localStorage.setItem("ThongTinNguoiDung", JSON.stringify(userdata))
             alert("Đăng Nhập Thành Công")
             setTimeout(()=>{
                 window.location.href = "../View/TrangChu.html"
-            },500)
+            },1500)
         }
         else {
             const result = await response.json()

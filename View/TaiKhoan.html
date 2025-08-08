@@ -26,7 +26,7 @@
                     class="form-control" placeholder="Search..." aria-label="Search"> </form>
             <div class="dropdown text-end"> <a href="#"
                     class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false"> <img src="../default-user-image.png" alt="mdo" width="32" height="32"
+                    aria-expanded="false"> <img src="AnhTrang/default-user-image.png" alt="mdo" width="32" height="32"
                         class="rounded-circle"> </a>
                 <ul class="dropdown-menu text-small">
                     <li><a class="dropdown-item" href="#">Tài Khoản</a></li>
@@ -38,10 +38,20 @@
             </div>
         </div>
     </div>
-    <div id="thongtin">
-        <p id="TenTaiKhoan">Tên Tài Khoản: <span id="TenChenVao"></span></p>
-        <p id="EmailTaiKhoan">Email Tài Khoản: <span id="EmailChenVao"></span></p>
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh">
+    <div class="card profile-card shadow mt-4">
+      <div class="card-body text-center">
+        <img src="AnhTrang/default-user-image.png" alt="User Profile"
+          class="rounded-circle profile-img mb-3 w-25 h-25" />
+        <h3 class="TenNguoiDung" id="TenChenVao"></h3>
+        <ul class="list-group list-group-flush mb-3">
+          <li class="list-group-item bg-transparent">
+            <i class="bi bi-envelope-fill me-2" id="EmailChenVao"></i>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </body>
 
 </html>
