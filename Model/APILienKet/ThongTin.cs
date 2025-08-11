@@ -11,6 +11,6 @@ namespace APILienKet
         public string TenNguoiDung { get; set; } = "";
         public string? EmailNguoiDung { get; set; } = null;
         public string MatKhauNguoiDung { get; set; } = "";
-
+        public string? anh_Text { get; set; } = "";
     }
 }

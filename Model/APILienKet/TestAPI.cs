@@ -35,9 +35,22 @@ namespace APILienKet
             if (thongtin != null)
             {
                 KetNoiCSDL.ThemNguoiDung(thongtin);
-                return Ok(new {message = "Đã thêm người dùng"});
+                return Ok(new { message = "Đã thêm người dùng" });
             }
-            return BadRequest(new { message = "Có sự cố khi thêm"});
+            return BadRequest(new { message = "Có sự cố khi thêm" });
+        }
+        [HttpPost("LayAnh_Text")]
+        public IActionResult layAnh_Text([FromBody] thongtintraicay thongtin)
+        {
+            if (thongtin != null)
+            {
+                string? layAnh_text = KetNoiCSDL.layanh_Text(thongtin.tentraicay);
+                if (layAnh_text != null)
+                {
+                    return Ok(new { message = "Thành công", layAnh_text });
+                }
+            }
+            return BadRequest(new { message = "Không tìm thấy thông tin ảnh" });
         }
     }
 }

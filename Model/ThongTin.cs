@@ -11,5 +11,6 @@ namespace Model
         public string TenNguoiDung { get; set; }
         public string EmailNguoiDung { get; set; }
         public string MatKhauNguoiDung { get; set; }
+        public string? anh_Text { get; set; } = "";
     }
 }

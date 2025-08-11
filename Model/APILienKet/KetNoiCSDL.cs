@@ -10,6 +10,7 @@ namespace APILienKet
     public class KetNoiCSDL
     {
         public static string urlketnoi = "server=localhost;user=root;password=123456;database=nguoidung";
+        public static string urlTraiCay = "server=localhost;user=root;password=123456;database=traicay";
         public static List<ThongTin> XemThongTinTatCaND()
         {
             List<ThongTin> list = new List<ThongTin>();
@@ -84,6 +85,19 @@ namespace APILienKet
             reader.Parameters.AddWithValue("@emailnguoidung", thongTin.EmailNguoiDung);
             reader.Parameters.AddWithValue("@matkhaunguoidung", thongTin.MatKhauNguoiDung);
             reader.ExecuteNonQuery();
+        }
+        public static string? layanh_Text(string tenTraiCay)
+        {
+            using var coon = new MySqlConnection(urlTraiCay);
+            coon.Open();
+            string layAnh = "Select anh_Text from thongtintraicay where tentraicay = @tentraicay limit 1";
+            using var cmd = new MySqlCommand(layAnh,coon);
+            cmd.Parameters.AddWithValue("@tentraicay", tenTraiCay);
+            using var reader = cmd.ExecuteReader();
+            if(reader.Read()){
+                return reader["anh_Text"].ToString();
+            }
+            return null;
         }
     }
 }
